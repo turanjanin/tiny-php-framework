@@ -1,0 +1,7 @@
+RewriteEngine on
+# Uncomment the next line if your site is not in domain root.
+#RewriteBase /framework
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
